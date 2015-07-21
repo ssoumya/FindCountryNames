@@ -1,0 +1,5 @@
+# Turn On the rewrite engine
+RewriteEngine on
+
+# Request routing
+RewriteRule ^([a-zA-Z_-]*)$ countryservice.php?name=$1 [nc,qsa]
